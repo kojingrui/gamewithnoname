@@ -1,0 +1,314 @@
+<html>
+    <head>
+        
+        <style>
+            ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+            .wallright{
+                height: 100%;
+                width: 50%;
+                position: fixed;
+                right: 0%;
+                top: 0;
+                background-image: linear-gradient(90deg, chocolate,brown,#800020,#6E260E,#954535,#814141);
+                border-left-width: 5px;
+                border-left-color: #D27D2D;
+                border-left-style: solid;
+                animation-name: right;
+                 animation-duration: 3s;  
+            animation-delay: 2s;
+  animation-fill-mode: both;
+            }
+            @keyframes left {
+                from {left: 0%;}
+                 to {left: -50%;}
+            }
+            @keyframes right {
+                from {right: 0%;}
+                 to {right: -50%;}
+            }
+            .wallleft{
+                height: 100%;
+                width: 50%;
+                position: fixed;
+                left: 0%;
+                top: 0;
+                background-image: linear-gradient(270deg, chocolate,brown,#800020,#6E260E,#954535,#814141);
+                border-right-width: 5px;
+                border-right-color: #D27D2D;
+                border-right-style: solid;
+                animation-name:left;
+                 animation-duration: 3s;  
+            animation-delay: 2s;
+  animation-fill-mode: both;
+            }
+        .bg{
+            background-image: url('bg.webp');
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+
+        }
+        .aaa{
+            position: fixed;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            background-color: rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .title{
+            color: white;
+            margin: 2%;
+            
+        }
+        .title2{
+            color: white;
+            font-size: 60px;
+            margin: 2%;
+            top: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .title3{
+            color: white;
+            font-size: 60px;
+            margin: 2%;
+            top: 200%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .title4{
+            color: white;
+            font-size: 60px;
+            margin: 2%;
+            top: 300%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            margin: 1%;
+        }
+        #mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#aaaa {
+  top: 20px;
+  background-color: rgba(250,250,250,0.8);
+}
+
+#bbbb {
+  top: 80px;
+  background-color: rgba(250,250,250,0.8);
+}
+
+#cccc {
+  top: 140px;
+  background-color: rgba(250,250,250,0.8);
+}
+
+#dddd {
+  top: 200px;
+  background-color: rgba(250,250,250,0.8);
+}
+p{
+    font-size: 24px;
+}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  width: 100%;
+  padding: 10%;
+  background-color: rgba(250,250,250,0.4);
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.cr{
+    position: absolute;
+    left: 40%;
+
+    width: 60%;
+    top:0%;
+    height: 100%;
+    padding: 2%;
+}
+.picture{
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  height: 150%;
+  width: 30%;
+}
+.pa{
+  background-image:url("you.png"); 
+}
+.pb{
+  background-image:url("frank.png"); 
+}
+.pc{
+  background-image:url("ling.png"); 
+}
+.pd{
+  background-image:url("darren.png"); 
+}
+.pe{
+  background-image:url("moses.png"); 
+}
+        </style>
+    </head>
+ 
+    <body>
+        <div class="bg"></div>
+        <div class="aaa">        <div class="title"id="target1"><h1>无名游戏</h1>
+    <p>无名游戏是由高景睿独立开发的一款文字冒险游戏。在这个游戏中，你将会来到一个末日的世界，你将和你的同伴们展开一场对付怪物的故事，并在过程中揭发人性的阴暗处。希望你们可以喜欢。<br>有任何意见请致函yickiostudio@gmail.com，先此致谢。</p>
+    </div>
+<div class="title2"id = "target2"><h1>版本·零号·其零</h1>
+<p>这是试玩版本，内容不足。</p></div>
+<div class="title3"id = "target3"><h1>角色列表</h1>
+    <div class="slideshow-container">
+        <div class="mySlides1">
+          <div class = "picture pa"></div>
+          <div class="cr"><p><b>你</b></p><p>这是你，一个只能在游戏中寻找优越感和关爱的人。你将成为你自己，然后体验这个世界。</p></div>
+        </div>
+      
+        <div class="mySlides1">
+            <div class="cr"><p><b>我</b></p><p>游戏的开发者，缺钱缺时间缺爱。</p></div>
+        </div>
+      
+        <div class="mySlides1">
+          <div class = "picture pb"></div>
+          <div class="cr"><p><b>Frank</b></p><p>F小队队长，乐观，人缘好，是你从小到大的朋友。</p></div>
+        </div>
+        <div class="mySlides1">
+          <div class = "picture pc"></div>
+          <div class="cr"><p><b>Ling</b></p><p>身高160，人类最强战斗力，第七基地大队长，把你当成自己的得力助手。</p></div>
+          </div>
+          <div class="mySlides1">
+            <div class = "picture pd"></div>
+            <div class="cr"><p><b>Darren</b></p><p>厨师，嘴贱，非常有正义感，喜欢找你吵嘴，但是对你没有恶意。</p></div>
+            </div>
+            <div class="mySlides1">
+              <div class = "picture pe"></div>
+              <div class="cr"><p><b>Moses</b></p><p>医生，优柔寡断，但是为人和善，非常善良，经常帮助你。</p></div>
+              </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+</div>
+
+<div class="title4"id = "target4"><h1>开始玩</h1>
+    <fieldset>
+        <legend><p>下载</p></legend>
+            <a href = "gamewithnoname.py" style="color: white;" download><p>点击这里</p></a>
+       </fieldset>
+       <fieldset>
+        <legend><p>线上玩</p></legend>
+            <a href = "https://www.pythonmorsels.com/p/2k6qx/" style="color: white;"><p>点击这里</p></a>
+       </fieldset>
+</div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="#" id="aaaa" onclick="scrollToTarget('target1')" >主题</a>
+    <a href="#" id="bbbb" onclick="scrollToTarget('target2')" >版本</a>
+    <a href="#" id="cccc"onclick="scrollToTarget('target3')" >角色</a>
+    <a href="#" id="dddd"onclick="scrollToTarget('target4')">开始玩</a>
+    </div>
+        <div class="wallright"></div>
+        <div class="wallleft"></div>
+        <script>
+function scrollToTarget(targetId) {
+    const target = document.getElementById(targetId);
+    target.scrollIntoView({ behavior: 'smooth' });
+}
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+        </script>
+    </body>
+</html>
